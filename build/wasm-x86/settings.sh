@@ -1,15 +1,11 @@
 SCRIPT_PATH="$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )"
 
 # Compiler settings
-if [[ "${DEBUG_BUILD}" ]]; then
-    export FLAGS="-g3 -O0 -DDEBUG"
-    export CMAKE_BUILD_TYPE="Debug"
-    export MESON_BUILD_TYPE="debug"
-else
-    export FLAGS="-O3 -DNDEBUG"
-    export CMAKE_BUILD_TYPE="Release"
-    export MESON_BUILD_TYPE="release"
-fi
+
+export FLAGS="-O3 -DNDEBUG"
+export CMAKE_BUILD_TYPE="Release"
+export MESON_BUILD_TYPE="release"
+
 
 # Shared options
 export PLATFORM=WASM
