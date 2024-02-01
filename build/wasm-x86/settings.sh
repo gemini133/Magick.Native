@@ -28,11 +28,11 @@ export SSE_OPTIONS="--disable-sse"
 # Library specific options
 export FFI_OPTIONS="--disable-exec-static-tramp"
 export FONTCONFIG_OPTIONS=""
-export HEIF_OPTIONS="-DENABLE_MULTITHREADING_SUPPORT=false"
+export HEIF_OPTIONS=""
 export LCMS_OPTIONS="--without-threads"
-export OPENEXR_OPTIONS="-DZLIB_LIBRARY=/usr/local/lib/libz.a -DZLIB_INCLUDE_DIR=/usr/local/include -DImath_DIR=/usr/local/lib/cmake/Imath"
+export OPENEXR_OPTIONS=""
 export WEBP_OPTIONS=""
-export IMAGEMAGICK_OPTIONS="--disable-openmp --without-threads --without-bzlib --without-lzma --with-autotrace=no --with-djvu=no --with-dps=no --with-fftw=no --with-flif=no --with-fpx=no  --with-gvc=no --with-heic=no --with-jbig=no --with-jpeg=yes --with-jxl=no --with-dmr=no --with-lcms=yes --with-lqr=no --with-ltdl=no --with-magick-plus-plus=no --with-openexr=no --with-openjp2=no --with-perl=no  --with-png=yes --with-raqm=no --with-raw=no --with-rsvg=no --with-tiff=no --with-webp=no --with-wmf=no --with-x=no --with-gslib=no"
+export IMAGEMAGICK_OPTIONS="--disable-openmp --without-threads --with-bzlib=no --with-autotrace=no --with-djvu=no --with-dps=no --with-fftw=no --with-flif=no --with-fpx=no --with-fontconfig=no --with-freetype=no --with-gslib=no --with-gvc=no --with-heic=no --with-jbig=no --with-jpeg=no --with-jxl=no --with-dmr=no --with-lcms=yes --with-lqr=no --with-ltdl=no --with-lzma=no --with-magick-plus-plus=no --with-openexr=no --with-openjp2=no --with-pango=no --with-perl=no --with-png=yes --with-raqm=no --with-raw=no --with-rsvg=no --with-tiff=no --with-webp=no --with-wmf=no --with-x=no --with-xml=no --with-zip=no --with-zlib=yes --with-zstd=yes"
 
 # WASM options
 export CC=emcc
